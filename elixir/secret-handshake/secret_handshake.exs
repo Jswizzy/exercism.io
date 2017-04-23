@@ -1,5 +1,5 @@
 defmodule SecretHandshake do
-  @secret_code {"wink", "double blink", "close your eyes", "jump"}
+  @codes ["wink", "double blink", "close your eyes", "jump", :reverse]
   @doc """
   Determine the actions of a secret handshake based on the binary
   representation of the given `code`.
@@ -16,23 +16,27 @@ defmodule SecretHandshake do
   """
   @spec commands(code :: integer) :: list(String.t())
   def commands(code) do
-    code
-    |> Integer.digits(2)
+    digits = for <<bit::1 <- <<code::5>> >>, do: bit
+
+    digits
     |> Enum.reverse()
-    |> Enum.with_index()
-    |> handshake()
-    |> IO.inspect
+    |> Enum.zip(@codes)
+    |> get_commands()
   end
 
-  defp handshake({code, index} , code \\ [] ) do
-    
-  end
+  defp get_commands(codes) do
+    commands =
+      for {1, command} <- codes, do: command
 
+    reverse? =
+      commands
+      |> Enum.member?(:reverse)
+
+    case reverse? do
+      :false -> commands
+      :true  ->
+        Enum.reverse(commands)
+        |> Enum.slice(1..-1)
+    end
+  end
 end
-
-
-
-SecretHandshake.commands(1)
-SecretHandshake.commands(2)
-SecretHandshake.commands(4)
-SecretHandshake.commands(15)
