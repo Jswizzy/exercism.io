@@ -46,7 +46,10 @@ $ elixir bob_test.exs
 
 (Replace `bob_test.exs` with the name of the test file.)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 868da2c40127ecc4c9d329c3204b9c84f6630c40
 ### Pending tests
 
 In the test suites, all but the first test have been skipped.

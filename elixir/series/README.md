@@ -1,15 +1,23 @@
-# Bob
+# Series
 
-Bob is a lackadaisical teenager. In conversation, his responses are very limited.
+Given a string of digits, output all the contiguous substrings of length `n` in that string.
 
-Bob answers 'Sure.' if you ask him a question.
+For example, the string "49142" has the following 3-digit series:
 
-He answers 'Whoa, chill out!' if you yell at him.
+- 491
+- 914
+- 142
 
-He says 'Fine. Be that way!' if you address him without actually saying
-anything.
+And the following 4-digit series:
 
-He answers 'Whatever.' to anything else.
+- 4914
+- 9142
+
+And if you ask for a 6-digit series from a 5-digit string, you deserve
+whatever you get.
+
+Note that these series are only required to occupy *adjacent positions*
+in the input; the digits need not be *numerically consecutive*.
 
 ## Running tests
 
@@ -20,6 +28,7 @@ $ elixir bob_test.exs
 ```
 
 (Replace `bob_test.exs` with the name of the test file.)
+
 
 ### Pending tests
 
@@ -49,7 +58,8 @@ see the [help page](http://exercism.io/languages/elixir).
 
 ## Source
 
-Inspired by the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial. [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)
+A subset of the Problem 8 at Project Euler [http://projecteuler.net/problem=8](http://projecteuler.net/problem=8)
 
 ## Submitting Incomplete Problems
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+

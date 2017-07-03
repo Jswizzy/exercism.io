@@ -1,15 +1,21 @@
-# Bob
+# Raindrops
 
-Bob is a lackadaisical teenager. In conversation, his responses are very limited.
+Convert a number to a string, the contents of which depend on the number's factors.
 
-Bob answers 'Sure.' if you ask him a question.
+- If the number has 3 as a factor, output 'Pling'.
+- If the number has 5 as a factor, output 'Plang'.
+- If the number has 7 as a factor, output 'Plong'.
+- If the number does not have 3, 5, or 7 as a factor,
+  just pass the number's digits straight through.
 
-He answers 'Whoa, chill out!' if you yell at him.
+## Examples
 
-He says 'Fine. Be that way!' if you address him without actually saying
-anything.
-
-He answers 'Whatever.' to anything else.
+- 28's factors are 1, 2, 4, **7**, 14, 28.
+  - In raindrop-speak, this would be a simple "Plong".
+- 30's factors are 1, 2, **3**, **5**, 6, 10, 15, 30.
+  - In raindrop-speak, this would be a "PlingPlang".
+- 34 has four factors: 1, 2, 17, and 34.
+  - In raindrop-speak, this would be "34".
 
 ## Running tests
 
@@ -20,6 +26,7 @@ $ elixir bob_test.exs
 ```
 
 (Replace `bob_test.exs` with the name of the test file.)
+
 
 ### Pending tests
 
@@ -49,7 +56,8 @@ see the [help page](http://exercism.io/languages/elixir).
 
 ## Source
 
-Inspired by the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial. [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)
+A variation on a famous interview question intended to weed out potential candidates. [http://jumpstartlab.com](http://jumpstartlab.com)
 
 ## Submitting Incomplete Problems
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+

@@ -3,7 +3,11 @@ if !System.get_env("EXERCISM_TEST_EXAMPLES") do
 end
 
 ExUnit.start
+<<<<<<< HEAD
 #ExUnit.configure exclude: :pending, trace: true
+=======
+ExUnit.configure exclude: :pending, trace: true
+>>>>>>> 868da2c40127ecc4c9d329c3204b9c84f6630c40
 
 # You need to define a SpaceAge module containing a function age_on that given a
 # planet (:earth, :saturn, etc) and a number of seconds returns the age in years

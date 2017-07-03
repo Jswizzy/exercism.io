@@ -1,7 +1,11 @@
 # Matrix
 
+<<<<<<< HEAD
 Given a string representing a matrix of numbers, return the rows and columns of
 that matrix.
+=======
+Given a string representing a matrix of numbers, return the rows and columns of that matrix.
+>>>>>>> 868da2c40127ecc4c9d329c3204b9c84f6630c40
 
 So given a string with embedded newlines like:
 
@@ -78,6 +82,10 @@ see the [help page](http://exercism.io/languages/elixir).
 
 Warmup to the `saddle-points` warmup. [http://jumpstartlab.com](http://jumpstartlab.com)
 
+<<<<<<< HEAD
 ## Submitting Incomplete Solutions
+=======
+## Submitting Incomplete Problems
+>>>>>>> 868da2c40127ecc4c9d329c3204b9c84f6630c40
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
 

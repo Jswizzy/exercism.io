@@ -1,15 +1,24 @@
-# Bob
+# Sublist
 
-Bob is a lackadaisical teenager. In conversation, his responses are very limited.
+Write a function to determine if a list is a sublist of another list.
 
-Bob answers 'Sure.' if you ask him a question.
+Write a function that given two lists determines if the first list is
+contained within the second list, if the second list is contained within
+the first list, if both lists are contained within each other or if none
+of these are true.
 
-He answers 'Whoa, chill out!' if you yell at him.
+Specifically, a list A is a sublist of list B if by dropping 0 or more elements
+from the front of B and 0 or more elements from the back of B you get a list
+that's completely equal to A.
 
-He says 'Fine. Be that way!' if you address him without actually saying
-anything.
+Examples:
 
-He answers 'Whatever.' to anything else.
+ * A = [1, 2, 3], B = [1, 2, 3, 4, 5], A is a sublist of B
+ * A = [3, 4, 5], B = [1, 2, 3, 4, 5], A is a sublist of B
+ * A = [3, 4], B = [1, 2, 3, 4, 5], A is a sublist of B
+ * A = [1, 2, 3], B = [1, 2, 3], A is equal to B
+ * A = [1, 2, 3, 4, 5], B = [2, 3, 4], A is a superlist of B
+ * A = [1, 2, 4], B = [1, 2, 3, 4, 5], A is not a superlist of, sublist of or equal to B
 
 ## Running tests
 
@@ -20,6 +29,7 @@ $ elixir bob_test.exs
 ```
 
 (Replace `bob_test.exs` with the name of the test file.)
+
 
 ### Pending tests
 
@@ -47,9 +57,8 @@ Or, you can enable all the tests by commenting out the
 For more detailed information about the Elixir track, please
 see the [help page](http://exercism.io/languages/elixir).
 
-## Source
 
-Inspired by the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial. [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)
 
 ## Submitting Incomplete Problems
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+

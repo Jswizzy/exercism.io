@@ -1,15 +1,13 @@
-# Bob
+# Pangram
 
-Bob is a lackadaisical teenager. In conversation, his responses are very limited.
+Determine if a sentence is a pangram.
 
-Bob answers 'Sure.' if you ask him a question.
+Determine if a sentence is a pangram. A pangram (Greek: παν γράμμα, pan gramma,
+"every letter") is a sentence using every letter of the alphabet at least once.
+The best known English pangram is "The quick brown fox jumps over the lazy dog."
 
-He answers 'Whoa, chill out!' if you yell at him.
-
-He says 'Fine. Be that way!' if you address him without actually saying
-anything.
-
-He answers 'Whatever.' to anything else.
+The alphabet used is ASCII, and case insensitive, from 'a' to 'z'
+inclusively.
 
 ## Running tests
 
@@ -49,7 +47,8 @@ see the [help page](http://exercism.io/languages/elixir).
 
 ## Source
 
-Inspired by the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial. [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)
+Wikipedia [https://en.wikipedia.org/wiki/Pangram](https://en.wikipedia.org/wiki/Pangram)
 
 ## Submitting Incomplete Problems
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+

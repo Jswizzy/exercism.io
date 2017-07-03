@@ -1,15 +1,16 @@
-# Bob
+# Word Count
 
-Bob is a lackadaisical teenager. In conversation, his responses are very limited.
+Given a phrase, count the occurrences of each word in that phrase.
 
-Bob answers 'Sure.' if you ask him a question.
+For example for the input `"olly olly in come free"`
 
-He answers 'Whoa, chill out!' if you yell at him.
+```plain
+olly: 2
+in: 1
+come: 1
+free: 1
+```
 
-He says 'Fine. Be that way!' if you address him without actually saying
-anything.
-
-He answers 'Whatever.' to anything else.
 
 ## Running tests
 
@@ -20,6 +21,7 @@ $ elixir bob_test.exs
 ```
 
 (Replace `bob_test.exs` with the name of the test file.)
+
 
 ### Pending tests
 
@@ -49,7 +51,8 @@ see the [help page](http://exercism.io/languages/elixir).
 
 ## Source
 
-Inspired by the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial. [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)
+This is a classic toy problem, but we were reminded of it by seeing it in the Go Tour.
 
 ## Submitting Incomplete Problems
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+

@@ -20,5 +20,9 @@ defmodule Strain do
   def discard(list, fun) do
     for x <- list, !fun.(x), do: x
   end
+<<<<<<< HEAD
 end
 
+=======
+end
+>>>>>>> 868da2c40127ecc4c9d329c3204b9c84f6630c40

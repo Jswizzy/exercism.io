@@ -1,15 +1,41 @@
-# Bob
+# Scrabble Score
 
-Bob is a lackadaisical teenager. In conversation, his responses are very limited.
+Given a word, compute the scrabble score for that word.
 
-Bob answers 'Sure.' if you ask him a question.
+## Letter Values
 
-He answers 'Whoa, chill out!' if you yell at him.
+You'll need these:
 
-He says 'Fine. Be that way!' if you address him without actually saying
-anything.
+```plain
+Letter                           Value
+A, E, I, O, U, L, N, R, S, T       1
+D, G                               2
+B, C, M, P                         3
+F, H, V, W, Y                      4
+K                                  5
+J, X                               8
+Q, Z                               10
+```
 
-He answers 'Whatever.' to anything else.
+## Examples
+"cabbage" should be scored as worth 14 points:
+
+- 3 points for C
+- 1 point for A, twice
+- 3 points for B, twice
+- 2 points for G
+- 1 point for E
+
+And to total:
+
+- `3 + 2*1 + 2*3 + 2 + 1`
+- = `3 + 2 + 6 + 3`
+- = `5 + 9`
+- = 14
+
+## Extensions
+- You can play a double or a triple letter.
+- You can play a double or a triple word.
 
 ## Running tests
 
@@ -49,7 +75,8 @@ see the [help page](http://exercism.io/languages/elixir).
 
 ## Source
 
-Inspired by the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial. [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)
+Inspired by the Extreme Startup game [https://github.com/rchatley/extreme_startup](https://github.com/rchatley/extreme_startup)
 
 ## Submitting Incomplete Problems
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+
