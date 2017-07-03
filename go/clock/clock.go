@@ -6,29 +6,26 @@ import (
 
 const testVersion = 4
 
-type Clock struct {
-	minutes int
-}
+const minutesInDay = 24 * 60
+
+type Clock int
 
 func New(hour, minute int) Clock {
-	minutes := (hour*60 + minute) % (24 * 60)
-
-	return Clock{minutes}.convert()
+	return Clock(hour*60 + minute).normalize()
 }
 
-func (c Clock) String() string {
-	return fmt.Sprintf("%02v:%02v", c.minutes/60, c.minutes%60)
+func (clock Clock) String() string {
+	return fmt.Sprintf("%02d:%02d", clock/60, clock%60)
 }
 
-func (c Clock) Add(minutes int) Clock {
-	minutes = (c.minutes + minutes) % (24 * 60)
-
-	return Clock{minutes}.convert()
+func (clock Clock) Add(minutes int) Clock {
+	return Clock(int(clock) + minutes).normalize()
 }
 
-func (c Clock) convert() Clock {
-	if c.minutes < 0 {
-		c.minutes = (24 * 60) + c.minutes
+func (clock Clock) normalize() Clock {
+	clock %= minutesInDay
+	if clock < 0 {
+		return Clock(minutesInDay + clock)
 	}
-	return Clock{c.minutes}
+	return clock
 }
