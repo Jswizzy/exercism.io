@@ -29,7 +29,7 @@ func isNaT(a, b, c float64) bool {
 	return !isTriangle(a, b, c) || hasZero(a, b, c) || hasNaN(a, b, c) || hasInf(a, b, c)
 }
 func isEqu(a, b, c float64) bool {
-	return a == b && c == b && a == c
+	return a == b && c == b
 }
 func isIso(a, b, c float64) bool {
 	return a == b || b == c || a == c
