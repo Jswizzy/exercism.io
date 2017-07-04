@@ -42,7 +42,7 @@ func Verse(n int) string {
 	lines := make([]string, n+1)
 	lines[0] = fmt.Sprintf(verses[0], days[n-1])
 	for i := n; i > 0; i-- {
-		lines[n-i+1] = fmt.Sprint(verses[len(verses)-i])
+		lines[n-i+1] = verses[len(verses)-i]
 	}
 	return strings.Join(lines, "")
 }
